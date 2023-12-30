@@ -1,0 +1,9 @@
+.layout,.middle{
+    display: flex;
+    
+}
+
+.middle{
+       margin-block: 2.75rem;
+    margin-left: 17.5rem;
+}

@@ -1,0 +1,26 @@
+
+.search{
+    display: flex;
+    margin-left: -1.9rem;
+}
+
+.search input{
+    width: 46.3125rem;
+height: 3rem;
+flex-shrink: 0;
+border-radius: 0.25rem;
+border: 1px solid #E6E6E6;
+background: #FAFAFA;
+text-indent: 3.25rem;
+color: #4C4C4C;
+
+/* body */
+font-family: Outfit;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.875rem; /* 166.667% */
+}
+.search img{
+    translate: 150% 0;
+}

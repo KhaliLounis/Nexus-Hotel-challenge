@@ -1,0 +1,13 @@
+h1{
+    color: var(--Primary-Color, #3B28CC);
+
+/* Title 2 regular */
+font-family: Outfit;
+font-size: 2.1875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.users-list{
+    width: 49.5rem;
+}
