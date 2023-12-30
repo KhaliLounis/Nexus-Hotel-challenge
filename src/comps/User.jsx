@@ -23,7 +23,7 @@ const User = ({ img, name, date }) => {
         </div>
       </div>
       <div className="icons">
-        <IoMdClose size="2rem" style={{ color: "#8E8E8E" }} />
+        <IoMdClose size="2rem" style={{ color: "#8E8E8E",cursor:'pointer' }} />
       </div>
     </div>
   );

@@ -43,8 +43,8 @@ const BookingUser = ({ img, name, status, date,place, suite, room}) => {
             <p>{place}</p>
       </div>
       <div className="icons">
-        <FaCheck  size='1.5rem' style={{color: suite ? '#3B28CC' : '#8E8E8E', }}/>
-        <IoMdClose size='2rem' style={{color: room ? '#3B28CC' : '#8E8E8E'}}/>
+        <FaCheck  size='1.5rem' style={{color: suite ? '#3B28CC' : '#8E8E8E',cursor:'pointer' }}/>
+        <IoMdClose size='2rem' style={{color: room ? '#3B28CC' : '#8E8E8E',cursor:'pointer'}}/>
       </div>
     </div>
   );
