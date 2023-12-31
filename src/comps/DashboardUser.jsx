@@ -2,7 +2,6 @@ import React from "react";
 import "./dashboarduser.css";
 import arrow from "../assets/arrow.svg";
 import check from "../assets/check.svg";
-import { FaArrowRight } from "react-icons/fa";
 const DashboardUser = ({ img, name, status, date, suite, room }) => {
   let styles = {
     background:
@@ -19,7 +18,7 @@ const DashboardUser = ({ img, name, status, date, suite, room }) => {
 
   return (
     <div className="user">
-      <div style={{ width: "5.6rem" }} className="username">
+      <div className="username">
         <img src={img} alt="img" />
         <p>{name}</p>
       </div>

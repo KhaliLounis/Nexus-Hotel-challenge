@@ -3,9 +3,11 @@ import "./bookinguser.css";
 import arrow from "../assets/arrow.svg";
 import { IoMdClose } from "react-icons/io";
 import { FaCheck } from "react-icons/fa";
+import { useDispatch, useSelector } from "react-redux";
+import { openModal } from "../redux/ModalSlice";
+import ConfirmModal from "./ConfirmModal";
 
-const BookingUser = ({ img, name, status, date,place, suite, room}) => {
-
+const BookingUser = ({ img, name, status, date, place, suite, room, id }) => {
   let styles = {
     background:
       status === "Pending"
@@ -18,10 +20,12 @@ const BookingUser = ({ img, name, status, date,place, suite, room}) => {
     color: status === "Unverified" && "#999",
     width: "80px",
   };
-
+  let dispatch = useDispatch();
+  let open = useSelector((state) => state.modal.open);
+  console.log(id)
   return (
     <div className="user">
-      <div style={{ width: "5.6rem" }} className="username">
+      <div className="username">
         <img src={img} alt="img" />
         <p>{name}</p>
       </div>
@@ -40,11 +44,21 @@ const BookingUser = ({ img, name, status, date,place, suite, room}) => {
         )}
       </div>
       <div className="place">
-            <p>{place}</p>
+        <p>{place}</p>
+        {open && <ConfirmModal />}
       </div>
       <div className="icons">
-        <FaCheck  size='1.5rem' style={{color: suite ? '#3B28CC' : '#8E8E8E',cursor:'pointer' }}/>
-        <IoMdClose size='2rem' style={{color: room ? '#3B28CC' : '#8E8E8E',cursor:'pointer'}}/>
+        <FaCheck
+          size="1.5rem"
+          style={{ color: suite ? "#3B28CC" : "#8E8E8E", cursor: "pointer" }}
+        />
+        <IoMdClose
+          onClick={() => {
+            dispatch(openModal(id));
+          }}
+          size="2rem"
+          style={{ color: room ? "#3B28CC" : "#8E8E8E", cursor: "pointer" }}
+        />
       </div>
     </div>
   );

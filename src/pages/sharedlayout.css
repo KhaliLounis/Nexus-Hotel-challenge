@@ -7,3 +7,10 @@
        margin-block: 2.75rem;
     margin-left: 17.5rem;
 }
+
+/* @media screen and (max-width:1300px){
+    .middle{
+        display: flex;
+        flex-direction: column;
+    }
+} */

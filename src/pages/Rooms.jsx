@@ -3,7 +3,7 @@ import Room from "../comps/Room";
 import Search from "../comps/Search";
 import Pagination from "../comps/Pagination";
 import "./rooms.css";
-import { roomsData } from "./roomsData";
+import { roomsData } from "../redux/roomsData";
 const Rooms = () => {
   return (
     <div >

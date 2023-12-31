@@ -1,0 +1,94 @@
+.confirmodal{
+
+border-radius: 0.3125rem;
+background: #FFF;
+position: fixed;
+
+top: 50%; /* Position it in the middle of the parent */
+left: 50%;
+transform: translate(-50%, -50%); /* Center the modal */
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+z-index: 999;
+/* margin: 0; */
+padding-bottom: 2.5rem;
+padding-top: 1rem;
+padding-inline: 8rem;
+}
+.confirmodal h1{
+    color: var(--Primary-Color, #3B28CC);
+font-family: Outfit;
+font-size: 1.3125rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.5rem; /* 114.286% */
+margin-bottom: 0;
+}
+.confirmodal p{
+    color: var(--Neutral1, #8E8E8E);
+font-family: Outfit;
+font-size: 0.8125rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.875rem; /* 230.769% */
+}
+.buttons{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons :first-child{
+    border-radius: 0.1875rem;
+background: var(--Primary-Color, #3B28CC);
+display: flex;
+width: 7.5rem;
+height: 2.125rem;
+padding: 0.75rem 3.375rem;
+justify-content: center;
+align-items: center;
+gap: 0.5rem;
+flex-shrink: 0;
+color: #FFF;
+font-family: Outfit;
+font-size: 0.9375rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+border: none;
+margin-right: 2rem;
+cursor: pointer;
+}
+.buttons :last-child{
+    border-radius: 0.1875rem;
+    border: 1px solid var(--Neutral1, #8E8E8E);
+    display: flex;
+width: 7.5rem;
+height: 2.125rem;
+padding: 0.75rem 3.375rem;
+justify-content: center;
+align-items: center;
+gap: 0.5rem;
+flex-shrink: 0;
+color: var(--Neutral1, #8E8E8E);
+font-family: Outfit;
+font-size: 0.9375rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+cursor: pointer;
+}
+
+.abovelayer {
+    margin: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(20,20,20,0.05);
+}

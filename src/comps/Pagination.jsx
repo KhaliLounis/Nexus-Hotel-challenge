@@ -8,7 +8,6 @@ const Pagination = () => {
         if (item > 0) {
           return <span>{item}</span>;
         }
-        console.log(item);
       })}
       <p
         style={{

@@ -23,7 +23,7 @@ export const dashboarData = [
     room: true,
   },
   {
-    name: "Flotsam",
+    name: "Khalil",
     status: "Cancel",
     date: "10/01/24 15/01/24".split(' '),
     suite: false,
@@ -31,7 +31,7 @@ export const dashboarData = [
     room: true,
   },
   {
-    name: "Gregautsch",
+    name: "Flotsam",
     status: "Unverified",
     date: 'No date available',
     suite: true,
@@ -39,7 +39,7 @@ export const dashboarData = [
     room: false,
   },
   {
-    name: "ElPistolero",
+    name: "Gojo",
     status: "Cancel",
     date: "10/01/24 15/01/24".split(' '),
     suite: false,
@@ -47,7 +47,7 @@ export const dashboarData = [
     room: true,
   },
   {
-    name: "Siuuuuuuu",
+    name: "Ronaldo",
     status: "Done",
     date: "10/01/24 15/01/24".split(' '),
     suite: true,

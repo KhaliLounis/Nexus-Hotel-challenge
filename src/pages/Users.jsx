@@ -1,15 +1,15 @@
-import React from 'react'
-import User from '../comps/User'
+import React from "react";
+import User from "../comps/User";
 import Search from "../comps/Search";
 import Pagination from "../comps/Pagination";
-import { bookingData } from "./bookingData";
-import './users.css'
+import { bookingData } from "../redux/bookingData";
+import "./users.css";
 const Users = () => {
   return (
     <div>
-      <Search/>
+      <Search />
       <h1>Users</h1>
-      <div className='users-list'>
+      <div className="users-list">
         {bookingData.map((item, index) => {
           return (
             <>
@@ -26,8 +26,7 @@ const Users = () => {
       </div>
       <Pagination />
     </div>
+  );
+};
 
-  )
-}
-
-export default Users
+export default Users;
