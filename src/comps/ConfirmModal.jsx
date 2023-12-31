@@ -15,7 +15,6 @@ const ConfirmModal = () => {
         <p>Please confirm this operation before we start</p>
         <div className="buttons">
           <button 
-            onMouseOver={(e) => { e.currentTarget.style.brightness = "85%" }}
             onClick={() => {
               dispatch(removeBooking(id));
               dispatch(closeModal());

@@ -6,7 +6,7 @@ const User = ({ img, name, date }) => {
   return (
     <div className="user">
       <div className="user-date">
-        <div style={{ width: "5.6rem", marginRight:'3rem' }} className="username">
+        <div style={{ width: "4rem", marginRight:'4rem' }} className="username">
           <img src={img} alt="img" />
           <p>{name}</p>
         </div>

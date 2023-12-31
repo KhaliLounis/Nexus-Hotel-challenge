@@ -61,6 +61,9 @@ border: none;
 margin-right: 2rem;
 cursor: pointer;
 }
+.buttons :first-child:hover {
+    filter: brightness(82%)
+}
 .buttons :last-child{
     border-radius: 0.1875rem;
     border: 1px solid var(--Neutral1, #8E8E8E);
