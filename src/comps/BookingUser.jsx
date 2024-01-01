@@ -22,7 +22,6 @@ const BookingUser = ({ img, name, status, date, place, suite, room, id }) => {
   };
   let dispatch = useDispatch();
   let open = useSelector((state) => state.modal.open);
-  console.log(id)
   return (
     <div className="user">
       <div className="username">

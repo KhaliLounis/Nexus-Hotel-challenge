@@ -9,7 +9,7 @@ const ConfirmModal = () => {
   const id = useSelector((state) => state.modal.id);
   return (
     <div className="model">
-      <div className="abovelayer"></div>
+      <div className="abovelayerr"></div>
       <div className="confirmodal">
         <h1>Are You Sure? </h1>
         <p>Please confirm this operation before we start</p>

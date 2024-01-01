@@ -36,7 +36,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 1.875rem; /* 272.727% */
 }
-.room button {
+.room > button {
     color: #FFF;
 font-family: Outfit;
 font-size: 0.75rem;

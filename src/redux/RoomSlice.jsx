@@ -10,8 +10,13 @@ const roomsSlice = createSlice({
   initialState,
   reducers: {
     reserveRoom: (state, action) => {
-      room = state.rooms.find((item) => item.id === action.payload);
-      room.available === false;
+      state.rooms.map((item) => {
+        if (item.id === action.payload) {
+          item.available = false;
+          return item;
+        }
+        return item
+      })
     },
   },
 });
