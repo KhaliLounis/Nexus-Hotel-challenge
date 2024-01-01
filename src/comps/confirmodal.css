@@ -9,18 +9,18 @@ left: 50%;
 transform: translate(-50%, -50%); /* Center the modal */
 display: flex;
 flex-direction: column;
-justify-content: space-around;
+justify-content: space-evenly;
 align-items: center;
 z-index: 999;
 /* margin: 0; */
-padding-bottom: 2.5rem;
+padding-bottom: 1.5rem;
 padding-top: 1rem;
 padding-inline: 8rem;
 }
 .confirmodal h1{
     color: var(--Primary-Color, #3B28CC);
 font-family: Outfit;
-font-size: 1.3125rem;
+font-size: 1.75rem !important;
 font-style: normal;
 font-weight: 500;
 line-height: 1.5rem; /* 114.286% */
